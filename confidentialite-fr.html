@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arrímalo · Politique de confidentialité</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1b16; background: #fff8f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ece0d8; background: #1a120e; }
+    td, th { border-color: #444 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8b3a0f; }
+  @media (prefers-color-scheme: dark) { h2 { color: #ffb693; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-inline-start: 4px solid #8b3a0f; padding-block: .5rem; padding-inline: 1rem 0; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Politique de confidentialité</h1>
+<p class="fecha">Application Arrímalo (<code>com.jrsoft.etiquetasnfc</code>) · Dernière mise à jour : 13 novembre 2026</p>
+
+<p class="clave"><strong>En une phrase :</strong> cette application n'a ni compte utilisateur ni serveur, et ce que tu lis et écris sur tes tags, tes modèles, ton historique et tes mots de passe ne quittent pas ton téléphone (sauf si tu les transfères toi-même vers un nouveau téléphone). Seule la publicité envoie des données, et c'est la bibliothèque de Google qui s'en charge.</p>
+
+<h2>Responsable du traitement</h2>
+<p>Le responsable du traitement est JR Soft, nom commercial de Javier Román Sáez, développeur de l'application. Tu peux le contacter à l'adresse <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>Ce que cette application NE fait PAS</h2>
+<ul>
+  <li>Il n'y a ni inscription, ni compte, ni identifiant, ni serveur propre. L'application fonctionne entièrement sur ton téléphone.</li>
+  <li>Il n'y a aucun outil propre d'analyse ni de rapports de plantage : ni Google Analytics, ni Crashlytics, ni rien de semblable. La seule bibliothèque qui envoie ses propres données à un tiers est celle de la publicité ; elle est expliquée plus bas. L'application intègre la bibliothèque de configuration à distance de Firebase (Remote Config), qui permettrait d'ajuster la publicité sans publier de nouvelle version, mais elle est désactivée : elle ne démarre pas et ne se connecte à aucun serveur. Si elle est activée un jour, cette politique sera mise à jour avant.</li>
+  <li>Elle ne lit ni ne copie les cartes bancaires, de transport ou d'accès, et n'émule aucune carte. Elle ne fonctionne qu'avec des tags NFC standard. Si tu approches l'une de ces cartes, l'application te dit que ce n'est pas un tag standard et n'en enregistre rien, pas même son identifiant.</li>
+  <li>Elle n'utilise ni la position du téléphone, ni l'appareil photo, ni tes contacts. La lampe torche des tâches s'allume sans ouvrir l'appareil photo ni demander l'autorisation de l'utiliser, et un contact que tu lis n'est enregistré que si tu l'ajoutes toi-même avec l'application Contacts.</li>
+  <li>JR Soft ne conserve pas tes données, sauf les e-mails que tu nous envoies, et ne remet à personne de listes ni de bases de données les contenant. Pour afficher et mesurer les annonces, le SDK publicitaire de Google (AdMob) collecte de lui-même des identifiants de l'appareil et d'autres données techniques et les envoie à Google, comme l'explique cette politique. Certaines lois américaines sur la vie privée considèrent que laisser le SDK d'un tiers collecter ces données pour de la publicité personnalisée revient à « vendre » ou « partager » des données personnelles ; si tu y vis, tu peux t'y opposer (voir « <a href="#eeuu">Résidents des États-Unis</a> »).</li>
+</ul>
+
+<h2>Données qui restent uniquement sur ton téléphone</h2>
+<p>Ces informations sont conservées dans le stockage privé de l'application et n'en sortent pas. Elles disparaissent complètement si tu désinstalles l'application ou si tu effaces ses données depuis les paramètres d'Android. L'historique peut aussi être effacé depuis l'application elle-même.</p>
+<ul>
+  <li><strong>L'historique</strong> de ce que tu lis et écris : la date, s'il s'agit d'une lecture ou d'une écriture, la puce, son fabricant, l'identifiant du tag (UID), son état, sa capacité et ce qu'il contenait. <strong>Pour les réseaux Wi-Fi que tu lis, le mot de passe n'est pas enregistré</strong>, seulement le nom du réseau et son type de sécurité. Pour ceux que tu écris toi-même, si.</li>
+  <li><strong>Tes modèles</strong> : ce que tu enregistres pour l'écrire à nouveau.</li>
+  <li><strong>Les mots de passe de tes tags</strong>, si tu en définis un depuis l'application, pour que tu ne le perdes pas et n'aies pas à le saisir à chaque fois. Ils sont enregistrés chiffrés avec une clé du magasin de clés d'Android (Android Keystore), qui ne quitte pas le téléphone, dans un dossier qui n'entre dans aucune sauvegarde ni dans le transfert vers un nouveau téléphone.</li>
+  <li><strong>Tes réglages</strong> : le thème et la langue.</li>
+  <li>Quelques compteurs pour choisir un bon moment pour te demander de noter l'application (combien de fois tu l'as ouverte et quand cela t'a été demandé pour la dernière fois).</li>
+  <li>Si tu utilises une tâche « Ne pas déranger », Android enregistre, dans ses propres paramètres, une règle « Ne pas déranger » portant le nom de l'application. C'est Android qui la gère, et tu peux retirer à l'application l'accès à « Ne pas déranger » dans les paramètres du système.</li>
+  <li>Le pays de ta carte SIM (ou, à défaut, celui de la région du système), que l'écran « Plus d'applis de JR Soft » consulte sur le moment pour n'afficher que les applis disponibles dans ton pays. Il n'est ni enregistré ni envoyé. Les liens vers Google Play de cet écran et ceux de « Noter l'appli » et de « Partager l'appli » contiennent un paramètre indiquant qu'ils viennent de cette application, sans aucune donnée te concernant.</li>
+</ul>
+<p><strong>Ce que tu écris sur un tag</strong> reste sur le tag, pas dans l'application : n'importe qui peut le lire en en approchant un téléphone, même s'il a un mot de passe (le mot de passe empêche seulement de le modifier). N'écris sur un tag rien que tu ne voudrais pas voir lu par la personne qui le trouve.</p>
+
+<h2>Sauvegardes, changement de téléphone et ce qui n'est pas transféré</h2>
+<p>La sauvegarde d'Android dans le cloud (celle de ton compte Google) est désactivée pour les données de cette application : aucune n'est envoyée. Android enregistre bien dans ton compte la liste des applications que tu avais installées, pour pouvoir les réinstaller, mais cette liste est gérée par Google et ne contient aucune donnée de l'application.</p>
+<p>Si, en configurant un nouveau téléphone, tu copies tes données directement depuis l'ancien, avec ou sans câble, l'historique, les modèles et les réglages peuvent passer sur le nouveau téléphone. Ce transfert, c'est toi qui le demandes, et c'est Android qui l'effectue, avec son outil ou celui du fabricant du téléphone et selon leurs propres conditions. D'après la documentation d'Android, il va d'un téléphone à l'autre sans passer par des serveurs. Il ne passe en aucun cas par les nôtres : JR Soft ne reçoit rien. Qu'il ait lieu dépend de la version d'Android et du fabricant : nous ne pouvons donc pas le garantir.</p>
+<p><strong>Ne sont pas transférés</strong> les éléments qui ne servent que sur l'ancien téléphone : les mots de passe enregistrés de tes tags (leur clé de chiffrement ne peut pas quitter le téléphone), ton choix concernant les publicités et l'état interne de la publicité, ainsi que la règle « Ne pas déranger » d'Android. Sur le nouveau téléphone, l'application te redemandera ce qu'il faut.</p>
+
+<h2>Données qui quittent le téléphone</h2>
+<h3>Publicité : Google AdMob</h3>
+<p>L'application affiche une publicité discrète, diffusée par le SDK publicitaire de Google (AdMob) : une bannière en bas de l'écran « Mes tags » (historique et modèles) et des annonces natives, signalées par la mention « Annonce », entre les entrées de l'historique. Il n'y a jamais d'annonces en plein écran, ni pendant que tu lis ou écris un tag, ni dans les tâches, ni dans les réglages. C'est pourquoi l'application déclare l'autorisation <code>com.google.android.gms.permission.AD_ID</code>, qui donne accès à l'identifiant publicitaire d'Android ; cet identifiant peut être réinitialisé et supprimé dans Paramètres d'Android → Google → Annonces.</p>
+<p>En plus de l'identifiant publicitaire, le SDK d'AdMob collecte l'identifiant de l'ensemble d'applications (app set ID), les interactions avec l'application et avec les annonces, ainsi que des données de diagnostic (temps de démarrage, blocages et consommation d'énergie). Google peut utiliser ton adresse IP pour estimer une position approximative, à l'échelle d'une ville environ. Google utilise ces données pour diffuser et mesurer la publicité, à des fins statistiques et pour prévenir la fraude, selon sa propre politique.</p>
+<p>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, et partout où la loi l'exige, l'application affiche le formulaire de consentement de Google (UMP) avant de diffuser de la publicité personnalisée. Tu peux modifier ton choix à tout moment dans Réglages → Options de confidentialité des annonces.</p>
+<p>Le message de consentement aux publicités est affiché par Google avec un texte commun à tous ses partenaires publicitaires, c'est pourquoi il mentionne la géolocalisation précise. Selon Google, son SDK publicitaire n'utilise que la position approximative déduite de l'adresse IP, et cette application ne lui transmet aucune position. Tu peux refuser cet usage dans « Gérer les options ».</p>
+<p><strong>Le contenu de tes tags n'arrive jamais jusqu'à la publicité.</strong> La demande d'annonce part sans aucune donnée de tes tags, de tes modèles ni de ton historique. Si tu refuses le consentement, tu verras de la publicité non personnalisée et l'application fonctionnera exactement de la même façon : aucune fonction n'est bloquée.</p>
+<h3>Ce que tu ouvres depuis un tag</h3>
+<p>Quand tu touches un bouton pour ouvrir ce que contient un tag (un lien, un appel, un e-mail, un SMS, une carte, un réseau Wi-Fi, un contact ou une appli), Android le transmet à l'application correspondante (ton navigateur, le clavier de numérotation, ton application d'e-mail, celle de cartes, les réglages Wi-Fi ou celle des contacts), et à partir de là, c'est la politique de confidentialité de cette application qui s'applique. Arrímalo ne l'envoie à aucun serveur. Il en va de même pour les tâches d'un tag : quand l'application est fermée, elle te montre d'abord ce qu'elle va faire et attend que tu touches « Faire ».</p>
+<h3>Adresse IP</h3>
+<p>Comme pour toute application qui se connecte à Internet, les serveurs de Google reçoivent ton adresse IP lors de la demande d'annonces. L'application ne se connecte à aucun autre serveur.</p>
+
+<h2>Autorisations demandées par l'application</h2>
+<table>
+  <tr><th>Autorisation</th><th>Pourquoi</th></tr>
+  <tr><td>NFC</td><td>Lire et écrire des tags. C'est ce que fait l'application.</td></tr>
+  <tr><td>Accès à « Ne pas déranger » (facultatif)</td><td>Seulement si tu utilises une tâche « Ne pas déranger » ou de son. C'est toi qui l'accordes dans les paramètres d'Android, et tu peux le retirer quand tu veux.</td></tr>
+  <tr><td>Programmer des alarmes</td><td>Les tâches d'alarme et de minuteur. C'est l'application Horloge du téléphone qui les programme.</td></tr>
+  <tr><td>Internet</td><td>La publicité.</td></tr>
+  <tr><td>Identifiant publicitaire</td><td>La publicité (voir plus haut).</td></tr>
+</table>
+
+<h2>Tiers concernés</h2>
+<table>
+  <tr><th>Service</th><th>Finalité</th><th>Sa politique</th></tr>
+  <tr><td>Google AdMob</td><td>Publicité et formulaire de consentement</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+  <tr><td>Google Play</td><td>Les liens de « Plus d'applis de JR Soft », « Noter l'appli » et « Partager l'appli », seulement si tu les touches</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</table>
+
+<h2>Transferts hors d'Europe</h2>
+<p>Google (AdMob) peut traiter des données en dehors de l'Espace économique européen. Google LLC adhère au cadre de protection des données UE-États-Unis (Data Privacy Framework), à son extension au Royaume-Uni et au cadre Suisse-États-Unis.</p>
+
+<h2>Base légale et conservation</h2>
+<p><strong>Base juridique.</strong> Ce qui est traité sur ton téléphone ne parvient pas à JR Soft : ton historique, tes modèles et tes mots de passe sont enregistrés pour que l'application fasse ce que tu lui demandes (art. 6.1.b RGPD). Pour ce qui en sort : (1) publicité personnalisée et utilisation du stockage de l'appareil à des fins publicitaires dans l'EEE, au Royaume-Uni et en Suisse : ton consentement, que tu donnes ou refuses dans le formulaire de Google et que tu peux retirer dans <em>Réglages → Options de confidentialité des annonces</em> (art. 6.1.a RGPD et art. 22.2 LSSI-CE) ; (2) publicité non personnalisée, sa mesure, les journaux techniques et la prévention de la fraude : l'intérêt légitime à financer une application gratuite, à ce qu'elle fonctionne bien et à la protéger contre la fraude (art. 6.1.f RGPD) ; (3) si tu nous écris : l'intérêt légitime à te répondre et à résoudre ce que tu nous signales (art. 6.1.f RGPD). Google traite les données d'AdMob en tant que responsable du traitement indépendant, selon ses propres politiques. L'accès à « Ne pas déranger », c'est toi qui l'accordes dans les paramètres d'Android, et tu peux le retirer quand tu veux ; avec cet accès, l'application change seulement ce mode sur ton téléphone et n'envoie rien.</p>
+<p>Les données conservées sur ton téléphone y restent jusqu'à ce que tu les effaces, que tu désinstalles l'application ou que tu effaces ses données. Cette application ne conserve aucune donnée en dehors de ton téléphone, à l'exception des messages que tu nous envoies, qui sont supprimés une fois la question réglée et, au plus tard, un an après leur réception ; Google conserve les siennes selon ses politiques.</p>
+
+<h2 id="seguridad">Sécurité</h2>
+<p>Ce que l'application enregistre se trouve dans son stockage privé, auquel Android ne laisse pas accéder les autres applications, et n'est pas envoyé dans la sauvegarde sur le cloud. L'application n'a ni serveurs ni comptes propres qui pourraient subir une fuite de données. Les mots de passe des tags sont enregistrés chiffrés avec une clé du magasin de clés d'Android (Android Keystore), qui ne quitte pas le téléphone, et n'entrent dans aucune sauvegarde. Les connexions du SDK publicitaire de Google sont chiffrées (HTTPS). Les messages que tu nous envoies sont conservés dans une boîte e-mail à laquelle seul JR Soft a accès, et sont supprimés dans les délais indiqués plus haut.</p>
+<p>Le mot de passe d'un tag est un cadenas léger : il empêche de modifier le tag, pas de le lire, et l'application te prévient de ne pas utiliser un mot de passe qui te sert déjà ailleurs. Quand l'application est fermée, les tâches d'un tag ne s'exécutent jamais sans que tu touches « Faire », et les liens d'une tâche ne peuvent être que des pages web, des cartes, des e-mails, des SMS ou le clavier de numérotation.</p>
+
+<h2>Tes droits</h2>
+<p>Si tu résides dans l'Union européenne, le RGPD te reconnaît les droits d'accès, de rectification, d'effacement, de limitation, de portabilité et d'opposition. En pratique, et puisque cette application ne conserve aucune donnée liée à ta personne en dehors de ton téléphone :</p>
+<ul>
+  <li><strong>Accès :</strong> tout ce que l'application enregistre est visible dans l'application elle-même, dans « Mes tags » (historique et modèles).</li>
+  <li><strong>Rectification et effacement :</strong> tu peux supprimer chaque entrée de l'historique ou chaque modèle, effacer l'historique, retirer le mot de passe d'un tag (celui qui est enregistré est supprimé aussi) ou désinstaller l'application. L'identifiant publicitaire se réinitialise ou se supprime dans Paramètres d'Android → Google → Annonces.</li>
+  <li><strong>Opposition et retrait du consentement :</strong> Réglages → Options de confidentialité des annonces ; et l'accès à « Ne pas déranger », depuis les paramètres d'Android.</li>
+</ul>
+<p>Les données collectées par la bibliothèque de Google sont gérées par Google, et les droits les concernant s'exercent auprès de Google : <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Tu peux aussi introduire une réclamation auprès de l'Agencia Española de Protección de Datos (Agence espagnole de protection des données) ou auprès de l'autorité de protection des données de ton pays (RGPD, art. 77).</p>
+
+<h2 id="eeuu">Résidents des États-Unis</h2>
+<p>Si tu vis dans un État américain doté de sa propre loi sur la protection de la vie privée (par exemple, la Californie, le Colorado, le Connecticut, le Texas ou la Virginie), tu as le droit de demander que tes données personnelles ne soient ni vendues ni partagées à des fins de publicité ciblée. Tu peux le faire dans l'application : <em>Réglages → Options de confidentialité des annonces</em> → « Don’t sell or share my data ». Tu ne verras ensuite que des annonces non personnalisées. Le contenu de tes tags, tes modèles et ton historique restent sur ton téléphone et ne sont envoyés à personne ; pour les annonces, le SDK de Google utilise des identifiants de l'appareil et une localisation approximative (à l'échelle de la ville). Pour toute autre demande concernant tes données, écris-nous à <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>Mineurs</h2>
+<p>Arrímalo ne s'adresse pas aux moins de 16 ans. Nous ne collectons pas sciemment de données concernant des mineurs de moins de 16 ans ; les données techniques envoyées par AdMob sont celles décrites plus haut.</p>
+
+<h2>Modifications de cette politique</h2>
+<p>Si cette politique change de manière substantielle, la nouvelle version sera publiée à cette même adresse avec une date de mise à jour différente.</p>
+
+<footer>
+<p>Arrímalo · JR Soft (Javier Román Sáez) · <code>com.jrsoft.etiquetasnfc</code> · Contact : <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Autres langues</a></p>
+</footer>
+
+</body>
+</html>

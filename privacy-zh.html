@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arrímalo · 隐私政策</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1b16; background: #fff8f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ece0d8; background: #1a120e; }
+    td, th { border-color: #444 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8b3a0f; }
+  @media (prefers-color-scheme: dark) { h2 { color: #ffb693; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-inline-start: 4px solid #8b3a0f; padding-block: .5rem; padding-inline: 1rem 0; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>隐私政策</h1>
+<p class="fecha">应用 Arrímalo（<code>com.jrsoft.etiquetasnfc</code>）· 最后更新：2026年11月13日</p>
+
+<p class="clave"><strong>一句话概括：</strong>本应用没有用户账号，也没有服务器；你在标签上读取和写入的内容、你的模板、你的历史记录和你的密码都不会离开你的手机（除非你自己把它们转到新手机上）。只有广告会发送数据，而这是由 Google 的库完成的。</p>
+
+<h2>数据控制者</h2>
+<p>数据控制者是本应用的开发者 JR Soft（Javier Román Sáez 的商号）。联系方式：<a href="mailto:demual@gmail.com">demual@gmail.com</a>。</p>
+
+<h2>本应用不会做的事</h2>
+<ul>
+  <li>没有注册、账号、用户名，也没有自己的服务器。整个应用都在你的手机上运行。</li>
+  <li>没有任何自有的分析或崩溃报告工具：没有 Google Analytics，没有 Crashlytics，也没有类似的工具。唯一会自行向第三方发送数据的库是广告库，详见下文。本应用包含 Firebase 的远程配置库（Remote Config），它可以用来在不发布新版本的情况下调整广告，但目前处于停用状态：既不会启动，也不会连接任何服务器。如果将来启用，我们会事先更新本政策。</li>
+  <li>不会读取或复制银行卡、交通卡或门禁卡，也不会模拟卡片。本应用只处理标准 NFC 标签。如果你把这类卡片靠近手机，应用会告诉你这不是标准标签，并且不会保存它的任何信息，连它的标识符也不保存。</li>
+  <li>不使用手机的位置、相机或你的通讯录。任务中的手电筒在开启时不会打开相机，也不会申请相机权限；你读取到的联系人，只有在你通过“通讯录”应用添加后才会保存。</li>
+  <li>JR Soft 不会保存你的数据（你发给我们的邮件除外），也不会把包含这些数据的名单或数据库交给任何人。为了展示和衡量广告，Google 的广告 SDK（AdMob）会自行收集设备标识符和其他技术数据并发送给 Google，详见本政策。美国的一些隐私法律认为，允许第三方的 SDK 为个性化广告收集这些数据属于“出售”或“共享”个人数据；如果你住在那里，可以选择退出（见“<a href="#eeuu">美国居民</a>”）。</li>
+</ul>
+
+<h2>只保留在你手机上的数据</h2>
+<p>以下信息保存在应用的私有存储空间中，不会离开应用。卸载应用或在 Android 设置中清除应用数据后，这些信息会完全消失。历史记录也可以在应用内通过“清除历史记录”清空。</p>
+<ul>
+  <li><strong>历史记录</strong>：你读取和写入过的内容，包括日期、是读取还是写入、芯片及其制造商、标签的标识符（UID）、标签的状态、容量以及其中的内容。<strong>你读取的 Wi-Fi 网络不会保存密码</strong>，只保存网络名称和安全类型。你自己写入的 Wi-Fi 网络则会连同密码一起保存。</li>
+  <li><strong>你的模板</strong>：你为了再次写入而保存的内容。</li>
+  <li><strong>你的标签密码</strong>：如果你在应用中为标签设置了密码，应用会保存它，这样你就不会忘记，也不用每次都输入。密码使用 Android 密钥库（Android Keystore）中的密钥加密，该密钥不会离开手机；密码保存在一个不包含在任何备份中、也不会在换新手机时转移的文件夹里。</li>
+  <li><strong>你的设置</strong>：主题和语言。</li>
+  <li>几个计数器，用来选择合适的时机请你为应用评分（你打开应用的次数，以及上次请你评分的时间）。</li>
+  <li>如果你使用“勿扰模式”任务，Android 会在其自身的设置中保存一条以本应用名称命名的“勿扰模式”规则。该规则由 Android 管理，你可以在系统设置中撤销本应用对“勿扰模式”的访问权限。</li>
+  <li>你的 SIM 卡所属国家（如果没有 SIM 卡，则为系统地区）：“JR Soft 的更多应用”页面会在打开时读取它，以便只显示你所在国家/地区可用的应用。该信息既不保存，也不发送。该页面、“给应用评分”和“分享应用”中指向 Google Play 的链接带有一个参数，只表明链接来自本应用，不包含你的任何数据。</li>
+</ul>
+<p><strong>你写入标签的内容</strong>保存在标签上，而不是应用里：任何人把手机靠近这个标签都能读取，即使标签设有密码也一样（密码只能防止内容被修改）。不要在标签上写入任何你不想让捡到它的人看到的内容。</p>
+
+<h2>备份、更换手机以及不会转移的内容</h2>
+<p>本应用的数据已关闭 Android 云端备份（即你的 Google 账号中的备份）：不会上传任何数据。Android 会在你的账号中保存你曾安装的应用列表，以便重新安装，但该列表由 Google 管理，不包含本应用的数据。</p>
+<p>如果你在设置新手机时直接从旧手机复制数据（无论是否使用数据线），历史记录、模板和设置可能会转移到新手机。这次转移由你发起，由 Android 使用其自带工具或手机厂商的工具完成，并适用它们自己的条款。根据 Android 的文档，数据直接从一部手机传到另一部手机，不经过服务器。无论如何都不会经过我们的服务器：JR Soft 不会收到任何数据。能否转移取决于 Android 版本和手机厂商，因此我们无法保证。</p>
+<p><strong>不会转移</strong>的是只在旧手机上才有用的内容：已保存的标签密码（其加密密钥无法离开手机）、你对广告所做的选择和广告的内部状态，以及 Android 的“勿扰模式”规则。在新手机上，应用会再次向你询问所需的内容。</p>
+
+<h2>会离开手机的数据</h2>
+<h3>广告：Google AdMob</h3>
+<p>本应用会显示由 Google 广告 SDK（AdMob）投放的低调广告：“我的标签”页面（历史记录和模板）底部的横幅广告，以及历史记录条目之间带有“广告”标签的原生广告。绝不会有全屏广告；在你读取或写入标签时、在任务中以及在设置中也都不会有广告。因此，本应用声明了 <code>com.google.android.gms.permission.AD_ID</code> 权限，用于访问 Android 广告 ID；你可以在 Android 设置 → Google → 广告中重置或删除该 ID。</p>
+<p>除广告 ID 外，AdMob SDK 还会收集应用组 ID（app set ID）、与应用和广告的互动，以及诊断数据（启动时间、卡顿和耗电情况）。Google 可能会使用你的 IP 地址估算大致位置，精确到城市级别。Google 根据其自身政策，将这些数据用于投放和衡量广告、统计分析和防范欺诈。</p>
+<p>在欧洲经济区、英国和瑞士，以及法律有此要求的其他地区，本应用会在投放个性化广告之前显示 Google 的同意表单（UMP）。你可以随时在“设置 → 广告隐私选项”中更改你的选择。</p>
+<p>广告同意消息由 Google 显示，其文字对 Google 的所有广告合作伙伴都相同，因此会提到精确地理位置。据 Google 称，其广告 SDK 只使用根据 IP 地址推断出的大致位置，而本应用不会向它提供任何位置。你可以在“管理选项”中拒绝这种使用。</p>
+<p><strong>你标签中的内容绝不会进入广告。</strong>广告请求中不含你的标签、模板或历史记录中的任何数据。如果你拒绝同意，你会看到非个性化广告，应用的功能完全不受影响：没有任何功能被锁定。</p>
+<h3>你从标签中打开的内容</h3>
+<p>当你点按按钮打开标签中的内容（链接、电话、邮件、短信、地图、Wi-Fi 网络、联系人或应用）时，Android 会把它交给相应的应用（你的浏览器、拨号器、邮件应用、地图应用、Wi-Fi 设置或通讯录应用），此后适用该应用的隐私政策。Arrímalo 不会把它发送到任何服务器。标签任务也是如此：在应用关闭时，它会先向你显示将要执行的操作，等你点按“执行”后才会执行。</p>
+<h3>IP 地址</h3>
+<p>与任何联网的应用一样，Google 的服务器在你请求广告时会收到你的 IP 地址。本应用不会连接任何其他服务器。</p>
+
+<h2>本应用申请的权限</h2>
+<table>
+  <tr><th>权限</th><th>用途</th></tr>
+  <tr><td>NFC</td><td>读取和写入标签。这正是本应用的用途。</td></tr>
+  <tr><td>“勿扰模式”访问权限（可选）</td><td>仅在你使用“勿扰模式”任务或声音任务时需要。由你在 Android 设置中授予，并可随时撤销。</td></tr>
+  <tr><td>设置闹钟</td><td>闹钟和计时器任务。由手机的“时钟”应用设置。</td></tr>
+  <tr><td>互联网</td><td>广告。</td></tr>
+  <tr><td>广告 ID</td><td>广告（见上文）。</td></tr>
+</table>
+
+<h2>涉及的第三方</h2>
+<table>
+  <tr><th>服务</th><th>用途</th><th>其隐私政策</th></tr>
+  <tr><td>Google AdMob</td><td>广告和同意表单</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+  <tr><td>Google Play</td><td>“JR Soft 的更多应用”、“给应用评分”和“分享应用”中的链接，仅在你点按时使用</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</table>
+
+<h2>向欧洲以外传输数据</h2>
+<p>Google（AdMob）可能会在欧洲经济区以外处理数据。Google LLC 已加入欧盟-美国数据隐私框架（Data Privacy Framework）、该框架的英国扩展以及瑞士-美国数据隐私框架。</p>
+
+<h2>法律依据和保留期限</h2>
+<p><strong>法律依据。</strong>在你手机上处理的内容不会到达 JR Soft：保存你的历史记录、模板和密码，是为了让应用完成你要求它做的事（GDPR 第 6.1.b 条）。对于确实离开手机的数据：(1) 在欧洲经济区、英国和瑞士的个性化广告，以及出于广告目的使用设备存储空间：依据你的同意，你在 Google 的表单中给予或拒绝同意，并可在<em>设置 → 广告隐私选项</em>中撤回（GDPR 第 6.1.a 条和 LSSI-CE 第 22.2 条）；(2) 非个性化广告及其效果衡量、技术日志和防范欺诈：依据为免费应用提供资金、确保其正常运行并保护其免受欺诈的正当利益（GDPR 第 6.1.f 条）；(3) 如果你写信给我们：依据回复你并解决你所反映问题的正当利益（GDPR 第 6.1.f 条）。Google 作为独立的数据控制者，按其自身政策处理 AdMob 的数据。“勿扰模式”访问权限由你在 Android 设置中授予，并可随时撤销；有了这项权限，应用只会在你的手机上切换这一模式，不会发送任何内容。</p>
+<p>保存在手机上的数据会一直保留，直到你删除它们、卸载应用或清除应用数据。除你发给我们的消息（事情解决后即删除，最迟在收到后一年内删除）外，本应用不会在你的手机之外保留任何数据；Google 按其政策保留其收集的数据。</p>
+
+<h2 id="seguridad">安全</h2>
+<p>应用保存的内容存放在它的私有存储空间中，Android 不允许其他应用进入，而且不会上传到云端备份。本应用没有可能发生数据泄露的自有服务器或账户。标签密码使用 Android 密钥库（Android Keystore）中的密钥加密保存，该密钥不会离开手机，密码也不包含在任何备份中。Google 广告 SDK 的连接经过加密（HTTPS）。你发给我们的消息保存在只有 JR Soft 能访问的电子邮件账户中，并会在上述期限内删除。</p>
+<p>标签密码只是一把轻便的锁：它能防止标签被修改，但不能防止被读取；应用也会提醒你不要使用你在别处用过的密码。在应用关闭时，标签任务绝不会在你点按“执行”之前执行；任务中的链接只能是网页、地图、邮件、短信或拨号器。</p>
+
+<h2>你的权利</h2>
+<p>如果你居住在欧盟，《通用数据保护条例》（GDPR）赋予你访问、更正、删除、限制处理、数据可携和反对的权利。实际上，由于本应用不会在你的手机之外保存任何与你个人相关的数据，你可以这样行使这些权利：</p>
+<ul>
+  <li><strong>访问：</strong>应用保存的所有内容都能在应用的“我的标签”（历史记录和模板）中看到。</li>
+  <li><strong>更正和删除：</strong>你可以删除任意一条历史记录或任意一个模板、清空历史记录、移除标签的密码（已保存的密码也会一并删除），或者卸载应用。广告 ID 可在 Android 设置 → Google → 广告中重置或删除。</li>
+  <li><strong>反对和撤回同意：</strong>设置 → 广告隐私选项；“勿扰模式”访问权限则在 Android 设置中撤销。</li>
+</ul>
+<p>Google 的库收集的数据由 Google 管理，与之相关的权利需向 Google 行使：<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>。你也可以向 Agencia Española de Protección de Datos（西班牙数据保护局）或你所在国家的数据保护机构投诉（GDPR 第 77 条）。</p>
+
+<h2 id="eeuu">美国居民</h2>
+<p>如果你居住在有自己隐私法律的美国州（例如加利福尼亚州、科罗拉多州、康涅狄格州、得克萨斯州或弗吉尼亚州），你有权要求不出售你的个人数据，也不将其共享用于定向广告。你可以在应用中操作：<em>设置 → 广告隐私选项</em> → “Don’t sell or share my data”。此后你只会看到非个性化广告。你标签中的内容、你的模板和历史记录都留在你的手机上，不会发送给任何人；为了投放广告，Google 的 SDK 会使用设备标识符和大致位置（城市级别）。如对你的数据有其他任何请求，请发送邮件至 <a href="mailto:demual@gmail.com">demual@gmail.com</a>。</p>
+
+<h2>未成年人</h2>
+<p>Arrímalo 不面向 16 岁以下的未成年人。我们不会故意收集 16 岁以下未成年人的数据；AdMob 发送的技术数据即上文所述的数据。</p>
+
+<h2>本政策的变更</h2>
+<p>如果本政策发生实质性变更，新版本将在同一地址发布，并注明新的更新日期。</p>
+
+<footer>
+<p>Arrímalo · JR Soft（Javier Román Sáez）· <code>com.jrsoft.etiquetasnfc</code> · 联系方式：<strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">其他语言</a></p>
+</footer>
+
+</body>
+</html>

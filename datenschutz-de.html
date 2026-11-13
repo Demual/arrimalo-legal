@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arrímalo · Datenschutzerklärung</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1b16; background: #fff8f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ece0d8; background: #1a120e; }
+    td, th { border-color: #444 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8b3a0f; }
+  @media (prefers-color-scheme: dark) { h2 { color: #ffb693; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-inline-start: 4px solid #8b3a0f; padding-block: .5rem; padding-inline: 1rem 0; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Datenschutzerklärung</h1>
+<p class="fecha">App Arrímalo (<code>com.jrsoft.etiquetasnfc</code>) · Letzte Aktualisierung: 13. November 2026</p>
+
+<p class="clave"><strong>In einem Satz:</strong> Diese App hat keine Benutzerkonten und keinen Server, und was du auf deinen Tags liest und schreibst, deine Vorlagen, dein Verlauf und deine Passwörter verlassen dein Handy nicht (es sei denn, du überträgst sie selbst auf ein neues Handy). Nur die Werbung sendet Daten, und das übernimmt die Bibliothek von Google.</p>
+
+<h2>Verantwortlicher</h2>
+<p>Verantwortlicher für die Verarbeitung ist JR Soft, Handelsname von Javier Román Sáez, Entwickler der App. Du erreichst ihn unter <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>Was diese App NICHT tut</h2>
+<ul>
+  <li>Es gibt keine Registrierung, kein Konto, keinen Benutzernamen und keinen eigenen Server. Die App läuft vollständig auf deinem Handy.</li>
+  <li>Es gibt keine eigenen Werkzeuge für Analysen oder Absturzberichte: weder Google Analytics noch Crashlytics noch Ähnliches. Die einzige Bibliothek, die von sich aus Daten an einen Dritten sendet, ist die der Werbung; sie wird unten erklärt. Die App enthält die Bibliothek für die Remote-Konfiguration von Firebase (Remote Config), mit der sich die Werbung anpassen ließe, ohne eine neue Version zu veröffentlichen, aber sie ist deaktiviert: Sie startet nicht und verbindet sich mit keinem Server. Sollte sie eines Tages aktiviert werden, wird diese Erklärung vorher aktualisiert.</li>
+  <li>Sie liest oder kopiert keine Bank-, Fahr- oder Zugangskarten und emuliert keine Karten. Sie arbeitet nur mit Standard-NFC-Tags. Wenn du eine solche Karte an das Handy hältst, sagt dir die App, dass es kein Standard-Tag ist, und speichert nichts davon, nicht einmal die Kennung der Karte.</li>
+  <li>Sie verwendet weder den Standort des Handys noch die Kamera noch deine Kontakte. Die Taschenlampen-Aufgabe schaltet das Licht ein, ohne die Kamera zu öffnen oder die Kameraberechtigung anzufordern, und ein Kontakt, den du liest, wird nur gespeichert, wenn du ihn selbst mit der Kontakte-App hinzufügst.</li>
+  <li>JR Soft speichert deine Daten nicht (außer den E-Mails, die du uns schickst) und gibt niemandem Listen oder Datenbanken damit weiter. Um Anzeigen auszuliefern und zu messen, erfasst das Werbe-SDK von Google (AdMob) selbstständig Gerätekennungen und andere technische Daten und sendet sie an Google, wie in dieser Erklärung beschrieben. Einige Datenschutzgesetze in den USA sehen es als „Verkauf“ oder „Weitergabe“ personenbezogener Daten an, wenn man das SDK eines Dritten diese Daten für personalisierte Werbung erfassen lässt; wenn du dort wohnst, kannst du widersprechen (siehe „<a href="#eeuu">Wohnsitz in den USA</a>“).</li>
+</ul>
+
+<h2>Daten, die nur auf deinem Handy bleiben</h2>
+<p>Diese Informationen werden im privaten Speicher der App abgelegt und verlassen ihn nicht. Sie verschwinden vollständig, wenn du die App deinstallierst oder ihre Daten in den Android-Einstellungen löschst. Den Verlauf kannst du auch in der App selbst leeren.</p>
+<ul>
+  <li><strong>Der Verlauf</strong> dessen, was du liest und schreibst: das Datum, ob gelesen oder geschrieben wurde, der Chip, sein Hersteller, die Kennung des Tags (UID), sein Zustand, seine Kapazität und sein Inhalt. <strong>Bei WLAN-Netzen, die du liest, wird das Passwort nicht gespeichert</strong>, nur der Name des Netzes und seine Sicherheitsart. Bei denen, die du selbst schreibst, schon.</li>
+  <li><strong>Deine Vorlagen</strong>: was du speicherst, um es erneut zu schreiben.</li>
+  <li><strong>Die Passwörter deiner Tags</strong>, wenn du in der App eines vergibst, damit du es nicht verlierst und nicht jedes Mal eingeben musst. Sie werden verschlüsselt gespeichert, mit einem Schlüssel aus dem Android-Schlüsselspeicher (Android Keystore), der das Handy nicht verlässt, in einem Ordner, der in keine Sicherung und in keine Übertragung auf ein neues Handy aufgenommen wird.</li>
+  <li><strong>Deine Einstellungen</strong>: Farbschema und Sprache.</li>
+  <li>Einige Zähler, um einen guten Moment zu wählen, dich um eine Bewertung der App zu bitten (wie oft du sie geöffnet hast und wann zuletzt gefragt wurde).</li>
+  <li>Wenn du eine „Bitte nicht stören“-Aufgabe verwendest, speichert Android in seinen eigenen Einstellungen eine „Bitte nicht stören“-Regel mit dem Namen der App. Sie wird von Android verwaltet, und du kannst der App den Zugriff auf „Bitte nicht stören“ in den Systemeinstellungen entziehen.</li>
+  <li>Das Land deiner SIM-Karte (oder, falls keine vorhanden ist, das der Systemregion), das der Bildschirm „Weitere Apps von JR Soft“ in dem Moment abfragt, um nur die in deinem Land verfügbaren Apps anzuzeigen. Es wird weder gespeichert noch gesendet. Die Links zu Google Play auf diesem Bildschirm, in „App bewerten“ und in „App teilen“ enthalten einen Parameter, der nur angibt, dass sie von dieser App kommen, ohne Daten über dich.</li>
+</ul>
+<p><strong>Was du auf einen Tag schreibst</strong>, bleibt auf dem Tag, nicht in der App: Jeder, der ein Handy daranhält, kann es lesen, auch wenn der Tag ein Passwort hat (das Passwort verhindert nur, dass er geändert wird). Schreib auf einen Tag nichts, was nicht jeder lesen soll, der ihn findet.</p>
+
+<h2>Sicherungen, Handywechsel und was nicht übertragen wird</h2>
+<p>Die Cloud-Sicherung von Android (die in deinem Google-Konto) ist für die Daten dieser App deaktiviert: Es wird keine davon hochgeladen. Android speichert in deinem Konto zwar die Liste der Apps, die du installiert hattest, um sie erneut zu installieren, aber diese Liste verwaltet Google, und sie enthält keine Daten der App.</p>
+<p>Wenn du beim Einrichten eines neuen Handys deine Daten direkt vom alten kopierst, mit oder ohne Kabel, können der Verlauf, die Vorlagen und die Einstellungen auf das neue Handy übertragen werden. Diese Übertragung veranlasst du, und Android führt sie aus, mit dem eigenen Tool oder dem des Handyherstellers und zu deren eigenen Bedingungen. Laut der Android-Dokumentation geht sie direkt von einem Handy zum anderen, ohne über Server zu laufen. Über unsere läuft sie in keinem Fall: JR Soft erhält nichts. Ob sie stattfindet, hängt von der Android-Version und vom Hersteller ab, daher können wir sie nicht garantieren.</p>
+<p><strong>Nicht übertragen wird</strong>, was nur auf dem alten Handy funktioniert: die gespeicherten Passwörter deiner Tags (ihr Verschlüsselungsschlüssel kann das Handy nicht verlassen), deine Entscheidung zur Werbung und der interne Zustand der Werbung sowie die „Bitte nicht stören“-Regel von Android. Auf dem neuen Handy fragt dich die App erneut nach dem, was nötig ist.</p>
+
+<h2>Daten, die dein Handy verlassen</h2>
+<h3>Werbung: Google AdMob</h3>
+<p>Die App zeigt dezente Werbung, die vom Werbe-SDK von Google (AdMob) ausgeliefert wird: ein Banner unten auf dem Bildschirm „Meine Tags“ (Verlauf und Vorlagen) und native Anzeigen mit der Kennzeichnung „Anzeige“ zwischen den Einträgen des Verlaufs. Es gibt nie Vollbildanzeigen und keine Werbung, während du einen Tag liest oder schreibst, in den Aufgaben oder in den Einstellungen. Deshalb deklariert die App die Berechtigung <code>com.google.android.gms.permission.AD_ID</code>, die Zugriff auf die Werbe-ID von Android gibt; diese ID kannst du unter Android-Einstellungen → Google → Werbung zurücksetzen und löschen.</p>
+<p>Neben der Werbe-ID erfasst das AdMob-SDK die Kennung des App-Sets (app set ID), die Interaktionen mit der App und mit den Anzeigen sowie Diagnosedaten (Startzeit, Hänger und Energieverbrauch). Google kann deine IP-Adresse nutzen, um einen ungefähren Standort zu schätzen, etwa auf Stadtebene. Google verwendet diese Daten, um Werbung auszuliefern und zu messen, für Statistiken und zur Betrugsprävention, gemäß seiner eigenen Richtlinie.</p>
+<p>Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz sowie überall dort, wo das Gesetz es verlangt, zeigt die App das Einwilligungsformular von Google (UMP) an, bevor personalisierte Werbung ausgeliefert wird. Du kannst deine Entscheidung jederzeit unter Einstellungen → Datenschutzoptionen für Anzeigen ändern.</p>
+<p>Die Einwilligungsabfrage für Werbung zeigt Google mit einem Text an, der für alle seine Werbepartner gleich ist; deshalb erwähnt sie genaue Standortdaten. Laut Google verwendet sein Werbe-SDK nur den ungefähren Standort, der sich aus der IP-Adresse ableiten lässt, und diese App gibt ihm keinerlei Standort weiter. Du kannst diese Nutzung unter „Optionen verwalten“ ablehnen.</p>
+<p><strong>Was auf deinen Tags steht, gelangt nie in die Werbung.</strong> Die Anzeigenanfrage enthält keinerlei Daten aus deinen Tags, deinen Vorlagen oder deinem Verlauf. Wenn du die Einwilligung ablehnst, siehst du nicht personalisierte Werbung, und die App funktioniert genau gleich: Keine Funktion ist gesperrt.</p>
+<h3>Was du selbst über einen Tag öffnest</h3>
+<p>Wenn du auf eine Schaltfläche tippst, um den Inhalt eines Tags zu öffnen (einen Link, einen Anruf, eine E-Mail, eine SMS, eine Karte, ein WLAN-Netz, einen Kontakt oder eine App), übergibt Android ihn an die passende App (deinen Browser, die Telefon-App, deine E-Mail-App, die Karten-App, die WLAN-Einstellungen oder die Kontakte-App), und ab dann gilt die Datenschutzerklärung dieser App. Arrímalo sendet ihn an keinen Server. Dasselbe gilt für die Aufgaben eines Tags: Bei geschlossener App zeigt sie dir zuerst, was sie tun wird, und wartet, bis du auf „Ausführen“ tippst.</p>
+<h3>IP-Adresse</h3>
+<p>Wie bei jeder App, die sich mit dem Internet verbindet, erhalten die Server von Google deine IP-Adresse, wenn Anzeigen angefordert werden. Die App verbindet sich mit keinem anderen Server.</p>
+
+<h2>Berechtigungen, die die App anfordert</h2>
+<table>
+  <tr><th>Berechtigung</th><th>Wofür</th></tr>
+  <tr><td>NFC</td><td>Tags lesen und schreiben. Genau das macht die App.</td></tr>
+  <tr><td>Zugriff auf „Bitte nicht stören“ (optional)</td><td>Nur wenn du eine „Bitte nicht stören“- oder Ton-Aufgabe verwendest. Du erteilst ihn in den Android-Einstellungen und kannst ihn jederzeit entziehen.</td></tr>
+  <tr><td>Wecker stellen</td><td>Die Wecker- und Timer-Aufgaben. Gestellt werden sie von der Uhr-App des Handys.</td></tr>
+  <tr><td>Internet</td><td>Die Werbung.</td></tr>
+  <tr><td>Werbe-ID</td><td>Die Werbung (siehe oben).</td></tr>
+</table>
+
+<h2>Beteiligte Dritte</h2>
+<table>
+  <tr><th>Dienst</th><th>Wofür</th><th>Datenschutzerklärung</th></tr>
+  <tr><td>Google AdMob</td><td>Werbung und Einwilligungsformular</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+  <tr><td>Google Play</td><td>Die Links von „Weitere Apps von JR Soft“, „App bewerten“ und „App teilen“, nur wenn du darauf tippst</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</table>
+
+<h2>Übermittlungen außerhalb Europas</h2>
+<p>Google (AdMob) kann Daten außerhalb des Europäischen Wirtschaftsraums verarbeiten. Google LLC ist dem Datenschutzrahmen EU-USA (Data Privacy Framework), seiner Erweiterung für das Vereinigte Königreich und dem Rahmen Schweiz-USA beigetreten.</p>
+
+<h2>Rechtsgrundlage und Speicherdauer</h2>
+<p><strong>Rechtsgrundlagen.</strong> Was auf deinem Handy verarbeitet wird, gelangt nicht zu JR Soft: Dein Verlauf, deine Vorlagen und deine Passwörter werden gespeichert, damit die App tut, worum du sie bittest (Art. 6.1.b DSGVO). Für das, was das Handy verlässt: (1) personalisierte Werbung und die Nutzung des Gerätespeichers zu Werbezwecken im EWR, im Vereinigten Königreich und in der Schweiz: deine Einwilligung, die du im Formular von Google erteilst oder verweigerst und unter <em>Einstellungen → Datenschutzoptionen für Anzeigen</em> widerrufen kannst (Art. 6.1.a DSGVO und Art. 22.2 LSSI-CE); (2) nicht personalisierte Werbung, ihre Messung, die technischen Protokolle und die Betrugsprävention: das berechtigte Interesse, eine kostenlose App zu finanzieren, ihr reibungsloses Funktionieren sicherzustellen und sie vor Betrug zu schützen (Art. 6.1.f DSGVO); (3) wenn du uns schreibst: das berechtigte Interesse, dir zu antworten und das zu lösen, was du uns mitteilst (Art. 6.1.f DSGVO). Google verarbeitet die Daten von AdMob als eigenständiger Verantwortlicher, nach seinen eigenen Richtlinien. Den Zugriff auf „Bitte nicht stören“ erteilst du in den Android-Einstellungen und kannst ihn jederzeit entziehen; damit ändert die App nur diesen Modus auf deinem Handy und sendet nichts.</p>
+<p>Die auf deinem Handy gespeicherten Daten bleiben dort, bis du sie löschst, die App deinstallierst oder die App-Daten löschst. Diese App speichert keine Daten außerhalb deines Handys, außer den Nachrichten, die du uns schickst und die gelöscht werden, sobald das Anliegen erledigt ist, spätestens aber ein Jahr nach Erhalt; Google bewahrt seine Daten gemäß seinen Richtlinien auf.</p>
+
+<h2 id="seguridad">Sicherheit</h2>
+<p>Was die App speichert, liegt in ihrem privaten Speicher, auf den Android anderen Apps keinen Zugriff gibt, und wird nicht in die Cloud-Sicherung hochgeladen. Die App hat keine eigenen Server oder Konten, bei denen es zu einem Datenleck kommen könnte. Die Passwörter der Tags werden verschlüsselt gespeichert, mit einem Schlüssel aus dem Android-Schlüsselspeicher (Android Keystore), der das Handy nicht verlässt, und sind in keiner Sicherung enthalten. Die Verbindungen des Werbe-SDK von Google sind verschlüsselt (HTTPS). Die Nachrichten, die du uns schickst, liegen in einem E-Mail-Konto, auf das nur JR Soft Zugriff hat, und werden innerhalb der oben genannten Fristen gelöscht.</p>
+<p>Das Passwort eines Tags ist ein leichtes Schloss: Es verhindert Änderungen, nicht das Lesen, und die App rät davon ab, ein Passwort zu verwenden, das du auch für etwas anderes nutzt. Bei geschlossener App werden die Aufgaben eines Tags nie ausgeführt, ohne dass du auf „Ausführen“ tippst, und die Links einer Aufgabe können nur Webseiten, Karten, E-Mails, SMS oder die Telefon-App sein.</p>
+
+<h2>Deine Rechte</h2>
+<p>Wenn du in der Europäischen Union wohnst, gewährt dir die DSGVO die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Da diese App außerhalb deines Handys keine Daten speichert, die mit deiner Person verknüpft sind, heißt das in der Praxis:</p>
+<ul>
+  <li><strong>Auskunft:</strong> Alles, was die App speichert, siehst du in ihr selbst, unter „Meine Tags“ (Verlauf und Vorlagen).</li>
+  <li><strong>Berichtigung und Löschung:</strong> Du kannst jeden Eintrag im Verlauf oder jede Vorlage löschen, den Verlauf leeren, das Passwort eines Tags entfernen (dabei wird auch das gespeicherte gelöscht) oder die App deinstallieren. Die Werbe-ID setzt du unter Android-Einstellungen → Google → Werbung zurück oder löschst sie dort.</li>
+  <li><strong>Widerspruch und Widerruf der Einwilligung:</strong> Einstellungen → Datenschutzoptionen für Anzeigen; und den Zugriff auf „Bitte nicht stören“ in den Android-Einstellungen.</li>
+</ul>
+<p>Die Daten, die die Bibliothek von Google erfasst, verwaltet Google, und die Rechte daran machst du bei Google geltend: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Du kannst dich auch bei der spanischen Datenschutzbehörde (Agencia Española de Protección de Datos) oder bei der Datenschutzbehörde deines Landes beschweren (DSGVO, Art. 77).</p>
+
+<h2 id="eeuu">Wohnsitz in den USA</h2>
+<p>Wenn du in einem US-Bundesstaat mit eigenem Datenschutzgesetz lebst (zum Beispiel Kalifornien, Colorado, Connecticut, Texas oder Virginia), hast du das Recht zu verlangen, dass deine personenbezogenen Daten weder verkauft noch für zielgerichtete Werbung weitergegeben werden. Das geht in der App: <em>Einstellungen → Datenschutzoptionen für Anzeigen</em> → „Don’t sell or share my data“. Danach siehst du nur noch nicht personalisierte Anzeigen. Der Inhalt deiner Tags, deine Vorlagen und dein Verlauf bleiben auf deinem Handy und werden an niemanden gesendet; für die Anzeigen verwendet das SDK von Google Gerätekennungen und einen ungefähren Standort (auf Stadtebene). Für alle anderen Anfragen zu deinen Daten schreib uns an <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>Minderjährige</h2>
+<p>Arrímalo richtet sich nicht an Personen unter 16 Jahren. Wir erheben wissentlich keine Daten von Personen unter 16 Jahren; die technischen Daten, die AdMob sendet, sind die oben beschriebenen.</p>
+
+<h2>Änderungen dieser Erklärung</h2>
+<p>Wenn sich diese Erklärung wesentlich ändert, wird die neue Fassung unter derselben Adresse mit einem anderen Aktualisierungsdatum veröffentlicht.</p>
+
+<footer>
+<p>Arrímalo · JR Soft (Javier Román Sáez) · <code>com.jrsoft.etiquetasnfc</code> · Kontakt: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Andere Sprachen</a></p>
+</footer>
+
+</body>
+</html>

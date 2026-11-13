@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arrímalo · Gizlilik politikası</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1b16; background: #fff8f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ece0d8; background: #1a120e; }
+    td, th { border-color: #444 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8b3a0f; }
+  @media (prefers-color-scheme: dark) { h2 { color: #ffb693; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-inline-start: 4px solid #8b3a0f; padding-block: .5rem; padding-inline: 1rem 0; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Gizlilik politikası</h1>
+<p class="fecha">Arrímalo uygulaması (<code>com.jrsoft.etiquetasnfc</code>) · Son güncelleme: 13 Kasım 2026</p>
+
+<p class="clave"><strong>Tek cümleyle:</strong> bu uygulamada kullanıcı hesabı ya da sunucu yoktur; etiketlerinden okudukların ve onlara yazdıkların, şablonların, geçmişin ve şifrelerin telefonundan çıkmaz (onları yeni bir telefona sen aktarmadıkça). Veri gönderen tek şey reklamlardır ve bunu Google’ın kütüphanesi yapar.</p>
+
+<h2>Sorumlu kim</h2>
+<p>Veri sorumlusu, uygulamanın geliştiricisi Javier Román Sáez’in ticari adı olan JR Soft’tur. <a href="mailto:demual@gmail.com">demual@gmail.com</a> adresinden iletişime geçebilirsin.</p>
+
+<h2>Bu uygulamanın YAPMADIKLARI</h2>
+<ul>
+  <li>Kayıt, hesap, kullanıcı adı ya da kendi sunucumuz yoktur. Uygulama tamamen telefonunda çalışır.</li>
+  <li>Kendine ait hiçbir analiz ya da çökme raporlama aracı yoktur: ne Google Analytics ne Crashlytics ne de benzerleri. Bir üçüncü tarafa kendiliğinden veri gönderen tek kütüphane reklam kütüphanesidir; aşağıda açıklanmıştır. Uygulama, Firebase’in uzaktan yapılandırma kütüphanesini (Remote Config) içerir; bu kütüphane yeni bir sürüm yayımlamadan reklamları ayarlamaya yarardı, ancak kapalıdır: başlamaz ve hiçbir sunucuya bağlanmaz. Bir gün etkinleştirilirse bu politika önceden güncellenir.</li>
+  <li>Banka, ulaşım veya giriş kartlarını okumaz ve kopyalamaz, kart emülasyonu da yapmaz. Yalnızca standart NFC etiketleriyle çalışır. Bu kartlardan birini yaklaştırırsan uygulama bunun standart bir etiket olmadığını söyler ve ondan hiçbir şey kaydetmez, kimliğini bile.</li>
+  <li>Telefonun konumunu, kamerayı ya da kişilerini kullanmaz. Görevlerdeki el feneri kamerayı açmadan ve kamera izni istemeden yanar; okuduğun bir kişi ise yalnızca onu Kişiler uygulamasıyla sen eklersen kaydedilir.</li>
+  <li>JR Soft verilerini saklamaz (bize gönderdiğin e-postalar dışında) ve verilerini içeren listeleri veya veritabanlarını kimseye vermez. Reklamları göstermek ve ölçmek için Google'ın reklam SDK'sı (AdMob), bu politikada açıklandığı gibi, cihaz tanımlayıcılarını ve diğer teknik verileri kendisi toplar ve Google'a gönderir. ABD'deki bazı gizlilik yasaları, bir üçüncü tarafın SDK'sının bu verileri kişiselleştirilmiş reklam için toplamasına izin vermeyi kişisel verilerin “satışı” veya “paylaşılması” olarak kabul eder; orada yaşıyorsan buna itiraz edebilirsin (bkz. “<a href="#eeuu">ABD’de yaşayanlar</a>”).</li>
+</ul>
+
+<h2>Yalnızca telefonunda kalan veriler</h2>
+<p>Bu bilgiler uygulamanın özel depolama alanında saklanır ve oradan çıkmaz. Uygulamayı kaldırırsan ya da verilerini Android ayarlarından silersen tamamen kaybolur. Geçmiş, uygulamanın içinden de temizlenebilir.</p>
+<ul>
+  <li>Okuduklarının ve yazdıklarının <strong>geçmişi</strong>: tarih, okuma mı yazma mı olduğu, çip, üreticisi, etiketin kimliği (UID), durumu, kapasitesi ve içeriği. <strong>Okuduğun Wi-Fi ağlarının şifresi kaydedilmez</strong>; yalnızca ağın adı ve güvenlik türü kaydedilir. Kendi yazdıklarınınki ise kaydedilir.</li>
+  <li><strong>Şablonların</strong>: yeniden yazmak için kaydettiklerin.</li>
+  <li><strong>Etiketlerinin şifreleri</strong>, uygulamadan onlara şifre koyarsan; böylece şifreyi kaybetmez ve her seferinde yazmak zorunda kalmazsın. Telefondan çıkmayan, Android anahtar deposundaki (Android Keystore) bir anahtarla şifrelenmiş olarak, hiçbir yedeğe ve yeni telefona aktarıma dahil edilmeyen bir klasörde saklanır.</li>
+  <li><strong>Ayarların</strong>: tema ve dil.</li>
+  <li>Uygulamayı değerlendirmeni istemek için iyi bir an seçmeye yarayan birkaç sayaç (uygulamayı kaç kez açtığın ve bunun sana en son ne zaman sorulduğu).</li>
+  <li>“Rahatsız etmeyin” görevi kullanırsan Android, kendi ayarlarında uygulamanın adını taşıyan bir “Rahatsız etmeyin” kuralı saklar. Bu kuralı Android yönetir; uygulamanın “Rahatsız etmeyin” erişimini sistem ayarlarından kaldırabilirsin.</li>
+  <li>SIM kartının ülkesi (SIM kart yoksa sistem bölgesinin ülkesi); “JR Soft'un diğer uygulamaları” ekranı, yalnızca ülkende bulunan uygulamaları göstermek için buna o anda bakar. Kaydedilmez ve gönderilmez. Bu ekrandaki, “Uygulamayı değerlendir” ve “Uygulamayı paylaş” içindeki Google Play bağlantılarında yalnızca bu uygulamadan geldiklerini belirten bir parametre bulunur; seninle ilgili hiçbir veri yoktur.</li>
+</ul>
+<p><strong>Bir etikete yazdığın şey</strong> uygulamada değil, etikette kalır: etiketin şifresi olsa bile ona telefon yaklaştıran herkes onu okuyabilir (şifre yalnızca etiketin değiştirilmesini engeller). Etiketi bulan kişinin okumasını istemediğin hiçbir şeyi bir etikete yazma.</p>
+
+<h2>Yedekler, telefon değiştirme ve aktarılmayanlar</h2>
+<p>Android’in buluta yedeklemesi (Google hesabındaki) bu uygulamanın verileri için kapalıdır: hiçbiri yüklenmez. Android, yeniden yükleyebilmek için yüklü uygulamalarının listesini hesabında saklar; ancak bu listeyi Google yönetir ve listede uygulamanın verileri yoktur.</p>
+<p>Yeni bir telefonu kurarken verilerini kabloyla ya da kablosuz olarak doğrudan eski telefondan kopyalarsan geçmiş, şablonlar ve ayarlar yeni telefona geçebilir. Bu aktarımı sen istersin; Android de kendi aracıyla ya da telefon üreticisinin aracıyla, onların koşullarıyla yapar. Android belgelerine göre veriler sunuculardan geçmeden bir telefondan diğerine gider. Hiçbir durumda bizim sunucularımızdan geçmez: JR Soft hiçbir şey almaz. Aktarımın yapılıp yapılmayacağı Android sürümüne ve üreticiye bağlıdır, bu yüzden bunu garanti edemeyiz.</p>
+<p>Yalnızca eski telefonda işe yarayanlar <strong>aktarılmaz</strong>: etiketlerinin kayıtlı şifreleri (şifreleme anahtarları telefondan çıkamaz), reklamlarla ilgili tercihin ve reklamların iç durumu ve Android’in “Rahatsız etmeyin” kuralı. Yeni telefonda uygulama, gereken şeyleri sana yeniden sorar.</p>
+
+<h2>Telefondan çıkan veriler</h2>
+<h3>Reklamlar: Google AdMob</h3>
+<p>Uygulama, Google’ın reklam SDK’sının (AdMob) sunduğu göze batmayan reklamlar gösterir: “Kayıtlı” ekranının (geçmiş ve şablonlar) altında bir banner ve geçmişteki kayıtların arasında “Reklam” ibaresiyle yerel (native) reklamlar. Asla tam ekran reklam yoktur; bir etiketi okurken ya da yazarken, görevlerde ve ayarlarda da reklam yoktur. Bu nedenle uygulama, Android reklam kimliğine erişim sağlayan <code>com.google.android.gms.permission.AD_ID</code> iznini bildirir; bu kimlik Android Ayarları → Google → Reklamlar bölümünden sıfırlanabilir ve silinebilir.</p>
+<p>Reklam kimliğinin yanı sıra AdMob SDK’sı uygulama grubu kimliğini (app set ID), uygulamayla ve reklamlarla etkileşimleri ve teşhis verilerini (açılış süresi, donmalar ve enerji tüketimi) toplar. Google, IP adresini kullanarak şehir düzeyinde yaklaşık bir konum tahmin edebilir. Google bu verileri kendi politikasına göre reklam göstermek ve ölçmek, istatistik ve dolandırıcılığı önlemek için kullanır.</p>
+<p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de ve yasanın gerektirdiği her yerde uygulama, kişiselleştirilmiş reklam göstermeden önce Google’ın onay formunu (UMP) gösterir. Tercihini istediğin zaman Ayarlar → Reklam gizlilik seçenekleri bölümünden değiştirebilirsin.</p>
+<p>Reklam onay mesajını Google, tüm reklam ortakları için ortak olan bir metinle gösterir; bu yüzden mesajda kesin coğrafi konumdan söz edilir. Google’a göre reklam SDK’sı yalnızca IP adresinden çıkarılan yaklaşık konumu kullanır ve bu uygulama ona hiçbir konum vermez. Bu kullanımı “Seçenekleri yönet” bölümünden reddedebilirsin.</p>
+<p><strong>Etiketlerinin içeriği asla reklamlara ulaşmaz.</strong> Reklam isteği; etiketlerinden, şablonlarından ya da geçmişinden hiçbir veri içermeden gönderilir. Onayı reddedersen kişiselleştirilmemiş reklamlar görürsün ve uygulama tamamen aynı şekilde çalışır: hiçbir özellik kilitli değildir.</p>
+<h3>Bir etiketten senin açtıkların</h3>
+<p>Bir etiketin içeriğini (bir bağlantı, arama, e-posta, SMS, harita, Wi-Fi ağı, kişi ya da uygulama) açmak için bir düğmeye dokunduğunda Android bunu ilgili uygulamaya (tarayıcına, Telefon uygulamasına, e-posta uygulamana, harita uygulamasına, Wi-Fi ayarlarına ya da Kişiler uygulamasına) iletir ve bundan sonra o uygulamanın gizlilik politikası geçerli olur. Arrímalo bunu hiçbir sunucuya göndermez. Bir etiketin görevleri için de aynısı geçerlidir: uygulama kapalıyken önce ne yapacağını gösterir ve “Yap” düğmesine dokunmanı bekler.</p>
+<h3>IP adresi</h3>
+<p>İnternete bağlanan her uygulamada olduğu gibi, reklamlar istenirken Google sunucuları IP adresini alır. Uygulama başka hiçbir sunucuya bağlanmaz.</p>
+
+<h2>Uygulamanın istediği izinler</h2>
+<table>
+  <tr><th>İzin</th><th>Ne için</th></tr>
+  <tr><td>NFC</td><td>Etiketleri okumak ve yazmak. Uygulamanın yaptığı iş budur.</td></tr>
+  <tr><td>“Rahatsız etmeyin” erişimi (isteğe bağlı)</td><td>Yalnızca bir “Rahatsız etmeyin” ya da ses görevi kullanırsan. Bu erişimi Android ayarlarından sen verirsin ve istediğin zaman kaldırabilirsin.</td></tr>
+  <tr><td>Alarm kurma</td><td>Alarm ve zamanlayıcı görevleri. Bunları telefonun Saat uygulaması kurar.</td></tr>
+  <tr><td>İnternet</td><td>Reklamlar.</td></tr>
+  <tr><td>Reklam kimliği</td><td>Reklamlar (yukarıya bak).</td></tr>
+</table>
+
+<h2>İlgili üçüncü taraflar</h2>
+<table>
+  <tr><th>Hizmet</th><th>Ne için</th><th>Politikası</th></tr>
+  <tr><td>Google AdMob</td><td>Reklamlar ve onay formu</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+  <tr><td>Google Play</td><td>“JR Soft'un diğer uygulamaları”, “Uygulamayı değerlendir” ve “Uygulamayı paylaş” bağlantıları, yalnızca onlara dokunursan</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</table>
+
+<h2>Avrupa dışına veri aktarımları</h2>
+<p>Google (AdMob), verileri Avrupa Ekonomik Alanı dışında işleyebilir. Google LLC, AB-ABD Veri Gizliliği Çerçevesi’ne (Data Privacy Framework), bu çerçevenin Birleşik Krallık uzantısına ve İsviçre-ABD çerçevesine katılmıştır.</p>
+
+<h2>Hukuki dayanak ve saklama</h2>
+<p><strong>Hukuki dayanak.</strong> Telefonunda işlenenler JR Soft’a ulaşmaz: geçmişin, şablonların ve şifrelerin, uygulamanın ondan istediğin işi yapabilmesi için saklanır (GDPR md. 6.1.b). Telefondan çıkanlar için: (1) AEA, Birleşik Krallık ve İsviçre’de kişiselleştirilmiş reklamlar ve cihaz depolama alanının reklam amacıyla kullanılması: Google formunda verdiğin ya da vermediğin ve <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden geri çekebileceğin onayın (GDPR md. 6.1.a ve LSSI-CE md. 22.2); (2) kişiselleştirilmemiş reklamlar, bunların ölçümü, teknik kayıtlar ve dolandırıcılığın önlenmesi: ücretsiz bir uygulamayı finanse etme, düzgün çalışmasını sağlama ve dolandırıcılığa karşı koruma konusundaki meşru menfaat (GDPR md. 6.1.f); (3) bize yazarsan: sana yanıt verme ve bildirdiğin konuyu çözme konusundaki meşru menfaat (GDPR md. 6.1.f). Google, AdMob verilerini kendi politikalarıyla bağımsız veri sorumlusu olarak işler. “Rahatsız etmeyin” erişimini Android ayarlarından sen verirsin ve istediğin zaman kaldırabilirsin; bu erişimle uygulama yalnızca telefonundaki bu modu değiştirir ve hiçbir şey göndermez.</p>
+<p>Telefonunda saklanan veriler, sen onları silene, uygulamayı kaldırana ya da uygulamanın verilerini silene kadar kalır. Bu uygulama, bize gönderdiğin mesajlar dışında telefonunun dışında hiçbir veri saklamaz (bu mesajlar konu çözüldüğünde, en geç de alındıktan bir yıl sonra silinir); Google ise kendi verilerini kendi politikalarına göre saklar.</p>
+
+<h2 id="seguridad">Güvenlik</h2>
+<p>Uygulamanın kaydettikleri, Android'in diğer uygulamaların erişmesine izin vermediği özel depolama alanında durur ve buluttaki yedeğe yüklenmez. Uygulamanın veri sızıntısı yaşayabilecek kendi sunucuları veya hesapları yoktur. Etiketlerin şifreleri, telefondan çıkmayan, Android anahtar deposundaki (Android Keystore) bir anahtarla şifrelenmiş olarak saklanır ve hiçbir yedeğe dahil edilmez. Google reklam SDK'sının bağlantıları şifrelidir (HTTPS). Bize gönderdiğin mesajlar yalnızca JR Soft'un erişebildiği bir e-posta hesabında saklanır ve yukarıda belirtilen sürelerde silinir.</p>
+<p>Bir etiketin şifresi hafif bir kilittir: etiketin değiştirilmesini engeller, okunmasını değil; uygulama da başka bir şey için kullandığın bir şifreyi kullanmaman konusunda uyarır. Uygulama kapalıyken bir etiketin görevleri, sen “Yap” düğmesine dokunmadan asla yapılmaz ve bir görevin bağlantıları yalnızca web sayfaları, haritalar, e-postalar, SMS’ler ya da Telefon uygulaması olabilir.</p>
+
+<h2>Hakların</h2>
+<p>Avrupa Birliği’nde yaşıyorsan GDPR sana erişim, düzeltme, silme, kısıtlama, taşınabilirlik ve itiraz haklarını tanır. Bu uygulama telefonunun dışında seninle ilişkili hiçbir veri saklamadığı için pratikte:</p>
+<ul>
+  <li><strong>Erişim:</strong> uygulamanın sakladığı her şeyi uygulamanın içinde, “Kayıtlı” bölümünde (geçmiş ve şablonlar) görürsün.</li>
+  <li><strong>Düzeltme ve silme:</strong> geçmişteki her kaydı ya da her şablonu silebilir, geçmişi temizleyebilir, bir etiketin şifresini kaldırabilir (kayıtlı şifre de silinir) ya da uygulamayı kaldırabilirsin. Reklam kimliği Android Ayarları → Google → Reklamlar bölümünden sıfırlanır ya da silinir.</li>
+  <li><strong>İtiraz ve onayın geri çekilmesi:</strong> Ayarlar → Reklam gizlilik seçenekleri; “Rahatsız etmeyin” erişimi için de Android ayarları.</li>
+</ul>
+<p>Google kütüphanesinin topladığı verileri Google yönetir ve bu verilerle ilgili haklar Google’a karşı kullanılır: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Ayrıca İspanya Veri Koruma Ajansı’na (Agencia Española de Protección de Datos) veya kendi ülkendeki veri koruma makamına şikâyette bulunabilirsin (GDPR md. 77).</p>
+
+<h2 id="eeuu">ABD’de yaşayanlar</h2>
+<p>Kendi gizlilik yasası olan bir ABD eyaletinde yaşıyorsan (örneğin California, Colorado, Connecticut, Texas veya Virginia), kişisel verilerinin satılmamasını ve hedefli reklamcılık için paylaşılmamasını isteme hakkın var. Bunu uygulamada yapabilirsin: <em>Ayarlar → Reklam gizlilik seçenekleri</em> → “Don’t sell or share my data”. O andan itibaren yalnızca kişiselleştirilmemiş reklamlar görürsün. Etiketlerinin içeriği, şablonların ve geçmişin telefonunda kalır ve kimseye gönderilmez; reklamlar için Google SDK’sı cihaz tanımlayıcılarını ve yaklaşık bir konumu (şehir düzeyinde) kullanır. Verilerinle ilgili diğer tüm talepler için bize <a href="mailto:demual@gmail.com">demual@gmail.com</a> adresinden yaz.</p>
+
+<h2>Çocuklar</h2>
+<p>Arrímalo 16 yaşından küçükler için tasarlanmamıştır. 16 yaşından küçüklerden bilerek veri toplamayız; AdMob’un gönderdiği teknik veriler yukarıda açıklananlardır.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Bu politika önemli ölçüde değişirse yeni sürüm, farklı bir güncelleme tarihiyle aynı adreste yayımlanır.</p>
+
+<footer>
+<p>Arrímalo · JR Soft (Javier Román Sáez) · <code>com.jrsoft.etiquetasnfc</code> · İletişim: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Diğer diller</a></p>
+</footer>
+
+</body>
+</html>

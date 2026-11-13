@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arrímalo · Kebijakan privasi</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1b16; background: #fff8f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ece0d8; background: #1a120e; }
+    td, th { border-color: #444 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8b3a0f; }
+  @media (prefers-color-scheme: dark) { h2 { color: #ffb693; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-inline-start: 4px solid #8b3a0f; padding-block: .5rem; padding-inline: 1rem 0; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Kebijakan privasi</h1>
+<p class="fecha">Aplikasi Arrímalo (<code>com.jrsoft.etiquetasnfc</code>) · Terakhir diperbarui: 13 November 2026</p>
+
+<p class="clave"><strong>Singkatnya:</strong> aplikasi ini tidak punya akun pengguna maupun server, dan apa yang kamu baca dan tulis di tag-mu, template-mu, riwayatmu, dan kata sandimu tidak keluar dari ponselmu (kecuali kamu sendiri memindahkannya ke ponsel baru). Hanya iklan yang mengirim data, dan yang melakukannya adalah library Google.</p>
+
+<h2>Siapa yang bertanggung jawab</h2>
+<p>Pengendali data adalah JR Soft, nama dagang dari Javier Román Sáez, pengembang aplikasi ini. Kamu bisa menghubungi kami di <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>Yang TIDAK dilakukan aplikasi ini</h2>
+<ul>
+  <li>Tidak ada pendaftaran, akun, nama pengguna, maupun server sendiri. Aplikasi ini berjalan sepenuhnya di ponselmu.</li>
+  <li>Tidak ada alat analitik atau laporan error milik aplikasi ini sendiri: tidak ada Google Analytics, Crashlytics, atau yang serupa. Satu-satunya library yang mengirim datanya sendiri ke pihak ketiga adalah library iklan, yang dijelaskan di bawah. Aplikasi ini menyertakan library konfigurasi jarak jauh Firebase (Remote Config), yang bisa dipakai untuk menyesuaikan iklan tanpa merilis versi baru, tetapi library itu dinonaktifkan: tidak dijalankan dan tidak terhubung ke server mana pun. Jika suatu hari diaktifkan, kebijakan ini akan diperbarui lebih dulu.</li>
+  <li>Tidak membaca atau menyalin kartu bank, transportasi, atau akses, dan tidak mengemulasi kartu. Aplikasi ini hanya bekerja dengan tag NFC standar. Jika kamu mendekatkan salah satu kartu tersebut, aplikasi memberi tahu bahwa itu bukan tag standar dan tidak menyimpan apa pun darinya, bahkan pengenalnya pun tidak.</li>
+  <li>Tidak memakai lokasi ponsel, kamera, atau kontakmu. Senter pada tugas dinyalakan tanpa membuka kamera atau meminta izin kamera, dan kontak yang kamu baca hanya disimpan jika kamu sendiri menambahkannya lewat aplikasi Kontak.</li>
+  <li>JR Soft tidak menyimpan datamu, kecuali email yang kamu kirim kepada kami, dan tidak memberikan daftar atau basis data berisi datamu kepada siapa pun. Untuk menampilkan dan mengukur iklan, SDK iklan Google (AdMob) mengumpulkan sendiri ID perangkat dan data teknis lainnya lalu mengirimkannya ke Google, seperti dijelaskan dalam kebijakan ini. Beberapa undang-undang privasi di AS menganggap bahwa membiarkan SDK pihak ketiga mengumpulkan data tersebut untuk iklan yang dipersonalisasi berarti “menjual” atau “membagikan” data pribadi; jika kamu tinggal di sana, kamu bisa menolaknya (lihat “<a href="#eeuu">Penduduk AS</a>”).</li>
+</ul>
+
+<h2>Data yang hanya tersimpan di ponselmu</h2>
+<p>Informasi ini disimpan di penyimpanan pribadi aplikasi dan tidak keluar dari sana. Semuanya hilang sepenuhnya jika kamu menghapus aplikasi atau menghapus datanya dari setelan Android. Riwayat juga bisa dikosongkan dari dalam aplikasi.</p>
+<ul>
+  <li><strong>Riwayat</strong> dari apa yang kamu baca dan tulis: tanggal, apakah dibaca atau ditulis, chip, produsennya, pengenal tag (UID), statusnya, kapasitasnya, dan isinya. <strong>Kata sandi jaringan Wi-Fi yang kamu baca tidak disimpan</strong>, hanya nama jaringan dan jenis keamanannya. Untuk jaringan yang kamu tulis sendiri, kata sandinya disimpan.</li>
+  <li><strong>Template-mu</strong>: yang kamu simpan untuk ditulis lagi.</li>
+  <li><strong>Kata sandi tag-mu</strong>, jika kamu memasangnya dari aplikasi, agar tidak hilang dan kamu tidak perlu mengetiknya setiap kali. Kata sandi itu disimpan terenkripsi dengan kunci dari penyimpanan kunci Android (Android Keystore), yang tidak keluar dari ponsel, di folder yang tidak ikut dalam cadangan apa pun maupun dalam pemindahan ke ponsel baru.</li>
+  <li><strong>Setelanmu</strong>: tema dan bahasa.</li>
+  <li>Beberapa penghitung untuk memilih waktu yang tepat untuk memintamu memberi nilai aplikasi (berapa kali kamu membukanya dan kapan terakhir kali diminta).</li>
+  <li>Jika kamu memakai tugas “Jangan ganggu”, Android menyimpan, di setelannya sendiri, aturan “Jangan ganggu” dengan nama aplikasi ini. Aturan itu dikelola Android, dan kamu bisa mencabut akses aplikasi ke “Jangan ganggu” di setelan sistem.</li>
+  <li>Negara kartu SIM-mu (atau, jika tidak ada, negara wilayah sistem), yang diperiksa layar “Aplikasi lain dari JR Soft” saat itu juga agar hanya menampilkan aplikasi yang tersedia di negaramu. Data ini tidak disimpan maupun dikirim. Tautan ke Google Play di layar itu, di “Beri nilai aplikasi”, dan di “Bagikan aplikasi” membawa parameter yang hanya menunjukkan bahwa tautan itu berasal dari aplikasi ini, tanpa data apa pun tentangmu.</li>
+</ul>
+<p><strong>Apa yang kamu tulis di tag</strong> tetap ada di tag, bukan di aplikasi: siapa pun yang mendekatkan ponsel ke tag itu bisa membacanya, meskipun tag itu punya kata sandi (kata sandi hanya mencegah isinya diubah). Jangan menulis di tag apa pun yang tidak ingin kamu perlihatkan kepada orang yang menemukannya.</p>
+
+<h2>Cadangan, ganti ponsel, dan yang tidak ikut dipindahkan</h2>
+<p>Pencadangan Android ke cloud (yang ada di Akun Google kamu) dinonaktifkan untuk data aplikasi ini: tidak ada yang diunggah. Android memang menyimpan daftar aplikasi yang pernah kamu instal di akunmu agar bisa diinstal ulang, tetapi daftar itu dikelola Google dan tidak berisi data aplikasi.</p>
+<p>Jika saat menyiapkan ponsel baru kamu menyalin data langsung dari ponsel lama, dengan atau tanpa kabel, riwayat, template, dan setelan bisa pindah ke ponsel baru. Pemindahan ini kamu sendiri yang meminta, dan Android yang melakukannya, dengan alatnya sendiri atau alat dari produsen ponselmu, sesuai ketentuan mereka. Menurut dokumentasi Android, data berpindah dari satu ponsel ke ponsel lain tanpa melewati server. Dalam keadaan apa pun data itu tidak melewati server kami: JR Soft tidak menerima apa pun. Bisa tidaknya hal ini dilakukan bergantung pada versi Android dan produsennya, jadi kami tidak bisa menjaminnya.</p>
+<p><strong>Yang tidak dipindahkan</strong> adalah apa yang hanya berguna di ponsel lama: kata sandi tag-mu yang tersimpan (kunci enkripsinya tidak bisa keluar dari ponsel), pilihanmu soal iklan dan status internal iklan, serta aturan “Jangan ganggu” di Android. Di ponsel baru, aplikasi akan menanyakan lagi apa yang diperlukan.</p>
+
+<h2>Data yang keluar dari ponsel</h2>
+<h3>Iklan: Google AdMob</h3>
+<p>Aplikasi ini menampilkan iklan yang tidak mengganggu, yang disajikan oleh SDK iklan Google (AdMob): sebuah banner di bagian bawah layar “Tag saya” (riwayat dan template) dan iklan native, berlabel “Iklan”, di antara entri riwayat. Tidak pernah ada iklan layar penuh, dan tidak ada iklan saat kamu membaca atau menulis tag, di tugas, atau di setelan. Karena itu aplikasi ini mendeklarasikan izin <code>com.google.android.gms.permission.AD_ID</code>, yang memberi akses ke ID iklan Android; ID ini bisa direset dan dihapus di Setelan Android → Google → Iklan.</p>
+<p>Selain ID iklan, SDK AdMob mengumpulkan ID kumpulan aplikasi (app set ID), interaksi dengan aplikasi dan iklan, serta data diagnostik (waktu mulai aplikasi, crash, dan pemakaian daya). Google bisa memakai alamat IP-mu untuk memperkirakan lokasi kasar, kira-kira setingkat kota. Google memakai data ini untuk menayangkan dan mengukur iklan, untuk statistik, dan untuk mencegah penipuan, sesuai kebijakannya sendiri.</p>
+<p>Di Wilayah Ekonomi Eropa, Inggris, dan Swiss, serta di mana pun hukum mewajibkannya, aplikasi menampilkan formulir persetujuan Google (UMP) sebelum menayangkan iklan yang dipersonalisasi. Kamu bisa mengubah pilihanmu kapan saja di Setelan → Opsi privasi iklan.</p>
+<p>Pesan persetujuan iklan ditampilkan oleh Google dengan teks yang sama untuk semua mitra iklannya, karena itu pesan tersebut menyebut geolokasi akurat. Menurut Google, SDK iklannya hanya menggunakan perkiraan lokasi yang diperoleh dari alamat IP, dan aplikasi ini tidak memberinya lokasi apa pun. Kamu bisa menolak penggunaan itu di “Kelola opsi”.</p>
+<p><strong>Isi tag-mu tidak pernah sampai ke iklan.</strong> Permintaan iklan dikirim tanpa data apa pun dari tag, template, atau riwayatmu. Jika kamu menolak memberi persetujuan, kamu akan melihat iklan yang tidak dipersonalisasi dan aplikasi tetap berfungsi persis sama: tidak ada fitur yang dikunci.</p>
+<h3>Yang kamu buka sendiri dari tag</h3>
+<p>Saat kamu mengetuk tombol untuk membuka isi tag (tautan, panggilan, email, SMS, peta, jaringan Wi-Fi, kontak, atau aplikasi), Android menyerahkannya ke aplikasi yang sesuai (browser-mu, aplikasi telepon, aplikasi email-mu, aplikasi peta, setelan Wi-Fi, atau aplikasi kontak), dan sejak itu yang berlaku adalah kebijakan privasi aplikasi tersebut. Arrímalo tidak mengirimnya ke server mana pun. Begitu juga dengan tugas di tag: saat aplikasi tertutup, aplikasi lebih dulu menunjukkan apa yang akan dilakukannya dan menunggu sampai kamu mengetuk “Jalankan”.</p>
+<h3>Alamat IP</h3>
+<p>Seperti aplikasi apa pun yang terhubung ke internet, server Google menerima alamat IP-mu saat iklan diminta. Aplikasi ini tidak terhubung ke server lain mana pun.</p>
+
+<h2>Izin yang diminta aplikasi</h2>
+<table>
+  <tr><th>Izin</th><th>Untuk apa</th></tr>
+  <tr><td>NFC</td><td>Membaca dan menulis tag. Itulah fungsi aplikasi ini.</td></tr>
+  <tr><td>Akses ke “Jangan ganggu” (opsional)</td><td>Hanya jika kamu memakai tugas “Jangan ganggu” atau tugas suara. Kamu sendiri yang memberikannya di setelan Android, dan kamu bisa mencabutnya kapan saja.</td></tr>
+  <tr><td>Menyetel alarm</td><td>Tugas alarm dan timer. Yang menyetelnya adalah aplikasi Jam di ponsel.</td></tr>
+  <tr><td>Internet</td><td>Iklan.</td></tr>
+  <tr><td>ID iklan</td><td>Iklan (lihat di atas).</td></tr>
+</table>
+
+<h2>Pihak ketiga yang terlibat</h2>
+<table>
+  <tr><th>Layanan</th><th>Untuk apa</th><th>Kebijakannya</th></tr>
+  <tr><td>Google AdMob</td><td>Iklan dan formulir persetujuan</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+  <tr><td>Google Play</td><td>Tautan “Aplikasi lain dari JR Soft”, “Beri nilai aplikasi”, dan “Bagikan aplikasi”, hanya jika kamu mengetuknya</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</table>
+
+<h2>Transfer ke luar Eropa</h2>
+<p>Google (AdMob) dapat memproses data di luar Wilayah Ekonomi Eropa. Google LLC tergabung dalam Kerangka Privasi Data UE-AS (Data Privacy Framework), perluasannya untuk Inggris, dan kerangka Swiss-AS.</p>
+
+<h2>Dasar hukum dan penyimpanan</h2>
+<p><strong>Dasar hukum.</strong> Apa yang diproses di ponselmu tidak sampai ke JR Soft: riwayat, template, dan kata sandimu disimpan agar aplikasi melakukan apa yang kamu minta (Pasal 6.1.b GDPR). Untuk yang keluar dari ponsel: (1) iklan yang dipersonalisasi dan penggunaan penyimpanan perangkat untuk tujuan iklan di Wilayah Ekonomi Eropa, Inggris, dan Swiss: persetujuanmu, yang kamu berikan atau tolak di formulir Google dan bisa kamu tarik di <em>Setelan → Opsi privasi iklan</em> (Pasal 6.1.a GDPR dan Pasal 22.2 LSSI-CE); (2) iklan yang tidak dipersonalisasi, pengukurannya, log teknis, dan pencegahan penipuan: kepentingan yang sah untuk membiayai aplikasi gratis, memastikannya berfungsi dengan baik, dan melindunginya dari penipuan (Pasal 6.1.f GDPR); (3) jika kamu menulis kepada kami: kepentingan yang sah untuk membalasmu dan menyelesaikan hal yang kamu sampaikan (Pasal 6.1.f GDPR). Google memproses data AdMob sebagai pengendali data independen, dengan kebijakannya sendiri. Akses ke “Jangan ganggu” kamu berikan sendiri di setelan Android dan bisa kamu cabut kapan saja; dengan akses itu, aplikasi hanya mengubah mode tersebut di ponselmu dan tidak mengirim apa pun.</p>
+<p>Data yang tersimpan di ponselmu tetap ada sampai kamu menghapusnya, menghapus aplikasi, atau menghapus datanya. Aplikasi ini tidak menyimpan data apa pun di luar ponselmu, kecuali pesan yang kamu kirim kepada kami, yang dihapus setelah urusannya selesai, paling lambat satu tahun setelah diterima; Google menyimpan datanya sendiri sesuai kebijakannya.</p>
+
+<h2 id="seguridad">Keamanan</h2>
+<p>Apa yang disimpan aplikasi ada di penyimpanan pribadinya, yang tidak boleh diakses aplikasi lain menurut aturan Android, dan tidak diunggah ke cadangan cloud. Aplikasi ini tidak punya server atau akun sendiri yang bisa mengalami kebocoran data. Kata sandi tag disimpan terenkripsi dengan kunci dari penyimpanan kunci Android (Android Keystore), yang tidak keluar dari ponsel, dan tidak ikut dalam cadangan apa pun. Koneksi SDK iklan Google dienkripsi (HTTPS). Pesan yang kamu kirim kepada kami disimpan di akun email yang hanya bisa diakses JR Soft, dan dihapus dalam jangka waktu yang disebutkan di atas.</p>
+<p>Kata sandi tag hanyalah gembok ringan: mencegah isinya diubah, bukan dibaca, dan aplikasi mengingatkanmu agar tidak memakai kata sandi yang kamu pakai untuk hal lain. Saat aplikasi tertutup, tugas di tag tidak pernah dijalankan tanpa kamu mengetuk “Jalankan”, dan tautan dalam tugas hanya bisa berupa halaman web, peta, email, SMS, atau aplikasi telepon.</p>
+
+<h2>Hak-hakmu</h2>
+<p>Jika kamu tinggal di Uni Eropa, GDPR memberimu hak akses, perbaikan, penghapusan, pembatasan, portabilitas, dan keberatan. Dalam praktiknya, karena aplikasi ini tidak menyimpan data apa pun yang terkait dengan dirimu di luar ponselmu:</p>
+<ul>
+  <li><strong>Akses:</strong> semua yang disimpan aplikasi bisa kamu lihat di dalamnya, di “Tag saya” (riwayat dan template).</li>
+  <li><strong>Perbaikan dan penghapusan:</strong> kamu bisa menghapus setiap entri riwayat atau setiap template, mengosongkan riwayat, menghapus kata sandi tag (kata sandi yang tersimpan juga ikut terhapus), atau menghapus aplikasi. ID iklan direset atau dihapus di Setelan Android → Google → Iklan.</li>
+  <li><strong>Keberatan dan penarikan persetujuan:</strong> Setelan → Opsi privasi iklan; dan akses ke “Jangan ganggu”, dari setelan Android.</li>
+</ul>
+<p>Data yang dikumpulkan library Google dikelola oleh Google, dan hak atas data itu kamu gunakan terhadap Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Kamu juga bisa mengajukan keluhan ke Agencia Española de Protección de Datos (otoritas pelindungan data Spanyol) atau ke otoritas pelindungan data di negaramu (GDPR, Pasal 77).</p>
+
+<h2 id="eeuu">Penduduk AS</h2>
+<p>Jika kamu tinggal di negara bagian AS yang punya undang-undang privasi sendiri (misalnya California, Colorado, Connecticut, Texas, atau Virginia), kamu berhak meminta agar data pribadimu tidak dijual atau dibagikan untuk iklan bertarget. Kamu bisa melakukannya di aplikasi: <em>Setelan → Opsi privasi iklan</em> → “Don’t sell or share my data”. Sejak saat itu, kamu hanya akan melihat iklan yang tidak dipersonalisasi. Isi tag-mu, template, dan riwayatmu tetap di ponselmu dan tidak dikirim kepada siapa pun; untuk iklan, SDK Google memakai ID perangkat dan lokasi perkiraan (tingkat kota). Untuk permintaan lain apa pun tentang datamu, kirim email ke <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>Anak-anak</h2>
+<p>Arrímalo tidak ditujukan untuk anak di bawah usia 16 tahun. Kami tidak dengan sengaja mengumpulkan data anak di bawah usia 16 tahun; data teknis yang dikirim AdMob adalah yang dijelaskan di atas.</p>
+
+<h2>Perubahan kebijakan ini</h2>
+<p>Jika kebijakan ini berubah secara substansial, versi barunya akan dipublikasikan di alamat yang sama dengan tanggal pembaruan yang berbeda.</p>
+
+<footer>
+<p>Arrímalo · JR Soft (Javier Román Sáez) · <code>com.jrsoft.etiquetasnfc</code> · Kontak: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Bahasa lain</a></p>
+</footer>
+
+</body>
+</html>
